@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #starButton {
+            background-color: yellow;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        #counter {
+            display: inline-block;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 5px 10px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button id="starButton" onclick="incrementCounter()">⭐</button>
+    <span id="counter">0</span>
+
+    <script>
+        let count = 0;
+
+        function incrementCounter() {
+            count++;
+            document.getElementById('counter').innerText = count;
+        }
+    </script>
+</body>
+</html>
